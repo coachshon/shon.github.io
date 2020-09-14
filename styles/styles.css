@@ -47,7 +47,7 @@ body {
 
 .sidebarname {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18pt;
+	font-size: 20pt;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
@@ -73,6 +73,12 @@ body {
   width: 25%;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .mediaicon {
 	display: block;
 	margin-left: auto;
@@ -87,6 +93,31 @@ body {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
+
+.nav_btns {
+	margin: 20px 0px;
+	width: inherit;
+}
+
+.nav_btns button {
+	width: inherit;
+	height: 35px;
+	margin: 0px;
+	padding: 12px 0px;
+	border: none;
+	color:white;
+	background-color: transparent;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 15px;
+}
+
+.nav_btns button:hover {
+	background-color: var(--color2);
+}
+
 
 .content {
 	margin-left: 340px;
