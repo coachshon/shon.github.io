@@ -112,10 +112,11 @@ body {
 	vertical-align: middle;
 	font-family: 'Kumbh Sans', sans-serif;
 	font-size: 15px;
+	outline: none;
 }
 
 .nav_btns button:hover {
-	background-color: var(--color2);
+	background-color: var(--color2);	
 }
 
 
