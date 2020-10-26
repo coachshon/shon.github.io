@@ -4,7 +4,6 @@
 	--color3: #3AAFA9;
 	--color4: #DEF2F1;
 	--color5: #FEFFFF;
-	margin-bottom: 0px;
 }
 
 body {
@@ -117,7 +116,7 @@ body {
 
 .nav_btns button:hover {
 	background-color: var(--color2);	
-}
+}}
 
 
 .content {
