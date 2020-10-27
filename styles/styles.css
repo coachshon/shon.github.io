@@ -124,28 +124,19 @@ body {
 /*	background-color: wheat;*/
 }
 
-.column2 {
-  	float: left;
-	height: 100pt;
-	width: 40%;
-}
-
-.row2::after {
-  	content: "";
-  	clear: both;
-  	display: table;
-}
-
 .title {
 /*	background-color: wheat;*/
 	padding: 10px;
 	width: auto;
 }
 
-.title_animation {
-	width: auto;
-	height: inherit;
-	vertical-align: middle;
+.typedtextclass {
+	font-family: 'Waiting for the Sunrise', cursive; 
+	font-size: 30px; 
+	color:var(--color1);
+	margin: 10px 20px; 
+	letter-spacing: 6px; 
+	font-weight: bold;
 }
 
 .firstname {
