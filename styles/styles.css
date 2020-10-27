@@ -116,10 +116,33 @@ body {
 
 .nav_btns button:hover {
 	background-color: var(--color2);	
-}}
-
+}
 
 .content {
 	margin-left: 340px;
 	padding: 48px;
+/*	background-color: wheat;*/
+}
+
+.title {
+/*	background-color: wheat;*/
+	margin-left: 10%;
+	width: auto;
+}
+
+.firstname {
+	font-family: 'Kumbh Sans', sans-serif;
+	color: var(--color5);
+	font-size: 400%;
+	margin: 0;
+	width: auto;
+}
+
+.lastname {
+	font-family: 'Kumbh Sans', sans-serif;
+	color: var(--color1);
+	font-size: 400%;
+	margin: 0;
+	margin-left: 3%;
+	width: auto;
 }
