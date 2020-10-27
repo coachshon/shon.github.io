@@ -121,14 +121,31 @@ body {
 .content {
 	margin-left: 340px;
 	padding: 48px;
-	background-color: wheat;
-	width: auto;
+/*	background-color: wheat;*/
+}
+
+.column2 {
+  	float: left;
+	height: 100pt;
+	width: 40%;
+}
+
+.row2::after {
+  	content: "";
+  	clear: both;
+  	display: table;
 }
 
 .title {
 /*	background-color: wheat;*/
-	margin-left: 10%;
-	
+	padding: 10px;
+	width: auto;
+}
+
+.title_animation {
+	width: auto;
+	height: inherit;
+	vertical-align: middle;
 }
 
 .firstname {
@@ -136,13 +153,15 @@ body {
 	color: var(--color5);
 	font-size: 400%;
 	margin: 0;
-	
+	width: auto;
+	vertical-align: middle;
 }
 
 .lastname {
 	font-family: 'Kumbh Sans', sans-serif;
 	color: var(--color1);
 	font-size: 400%;
+	width: auto;
 	margin: 0;
-	margin-left: 3%;
+	vertical-align: middle;
 }
