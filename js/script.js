@@ -58,7 +58,6 @@ function typewriter()
   setTimeout("typewriter()", iSpeed);
  }
 }
-
 document.addEventListener("DOMContentLoaded", function(){
 	typewriter();
 });
