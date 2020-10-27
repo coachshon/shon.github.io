@@ -121,13 +121,14 @@ body {
 .content {
 	margin-left: 340px;
 	padding: 48px;
-/*	background-color: wheat;*/
+	background-color: wheat;
+	width: auto;
 }
 
 .title {
 /*	background-color: wheat;*/
 	margin-left: 10%;
-	width: auto;
+	
 }
 
 .firstname {
@@ -135,7 +136,7 @@ body {
 	color: var(--color5);
 	font-size: 400%;
 	margin: 0;
-	width: auto;
+	
 }
 
 .lastname {
@@ -144,5 +145,4 @@ body {
 	font-size: 400%;
 	margin: 0;
 	margin-left: 3%;
-	width: auto;
 }
