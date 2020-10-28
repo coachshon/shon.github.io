@@ -139,8 +139,8 @@ hr {
 }
 
 .typedtextclass {
-	font-family: 'Waiting for the Sunrise', cursive; 
-	font-size: 30px; 
+	font-family: 'Ubuntu Mono', monospace; 
+	font-size: 20px; 
 	color:var(--color1);
 	margin: 30px 20px; 
 	letter-spacing: 1px; 
@@ -177,6 +177,11 @@ hr {
 	vertical-align: middle;
 }
 
+.console_img {
+/*	max-height: 0%;*/
+	max-width: 60%;
+	
+}
 .aftertw {
 	visibility: hidden;
 }

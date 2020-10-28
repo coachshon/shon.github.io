@@ -1,18 +1,18 @@
-function selected(icon){
+function selected(icon) {
 	var pos = icon.src.lastIndexOf(".");
 	var source = icon.src.slice(0, pos);
 	source = source + "_selected.png";
 	icon.src = source;
 }
 
-function unselected(icon){
+function unselected(icon) {
 	var pos = icon.src.lastIndexOf("_");
 	var source = icon.src.slice(0, pos);
 	source = source + ".png";
 	icon.src = source;
 }
 
-function navscroll(button){
+function navscroll(button) {
 	var section = "about_me";
 	switch(button.id){
 		case "btn_aboutme":
@@ -31,6 +31,9 @@ function navscroll(button){
 			section = "projects";
 			break;	
 	}
+	finished_typing = true;
+	fill_typewriter();
+	while (!filled);
 	showcontent();
 	document.getElementById(section).scrollIntoView();
 }
@@ -40,7 +43,8 @@ var birthday = new Date(1997, 12, 16, 10, 0, 0, 0);
 var ageDifMs = Date.now() - birthday.getTime();
 var ageDate = new Date(ageDifMs); // miliseconds from epoch
 var age = Math.abs(ageDate.getUTCFullYear() - 1970).toString();
-
+var finished_typing = false;
+var filled = false;
 
 // set up text to print, each item in array is new line
 var aText = new Array(
@@ -60,34 +64,50 @@ var iTextPos = 0; // initialise text position
 var sContents = ''; // initialise contents variable
 var iRow; // initialise current row
  
-function typewriter()
-{
+function fill_typewriter() {
+	var destination = document.getElementById("typedtext");
+	var text = "";
+	for (var i = 0; i < aText.length; i++) {
+		text += aText[i] +  '<br />';
+	}
+	destination.innerHTML = text;
+	filled = true;
+}
+
+function typewriter() {
 	sContents =  ' ';
 	iRow = Math.max(0, iIndex-iScrollAt);
 	var destination = document.getElementById("typedtext");
 	while ( iRow < iIndex ) {
     	sContents += aText[iRow++] + '<br />';
    	}
-	destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-   	
+	if (finished_typing == false) {
+		destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+	}
    	if ( iTextPos++ == iArrLength ) {
     	iTextPos = 0;
     	iIndex++;
     	if ( iIndex != aText.length ) {
 			iArrLength = aText[iIndex].length;
-    		setTimeout("typewriter()", 500);
+			if (finished_typing == false) {
+				setTimeout("typewriter()", 500);
+			} 	
     	}
 		else {
+			finished_typing = true;
+			filled = true;
 			showcontent();
 			destination.innerHTML = destination.innerHTML.replace("_", "");
 		}
    	} 
 	else {
-    	setTimeout("typewriter()", iSpeed);
+		if (finished_typing == false) {
+			setTimeout("typewriter()", iSpeed);
+		} 	
    	}
 
   }
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function() {
 	document.body.style.overflow = 'hidden';
 	typewriter();
 });
