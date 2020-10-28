@@ -138,15 +138,6 @@ hr {
 	width: auto;
 }
 
-.typedtextclass {
-	font-family: 'Ubuntu Mono', monospace; 
-	font-size: 20px; 
-	color:var(--color1);
-	margin: 30px 20px; 
-	letter-spacing: 1px; 
-	font-weight: bold;
-}
-
 .firstname {
 	font-family: 'Kumbh Sans', sans-serif;
 	color: var(--color5);
@@ -168,6 +159,40 @@ hr {
 	animation: fadein 5s;
 }
 
+.container {
+	position: relative;
+	text-align: left;
+	margin: 40px 0px;
+	color: white;
+	height: 100%;
+	display: block;
+	max-height: 100%;
+}
+
+.typedtextclass {
+	position: absolute;
+	font-family: 'Ubuntu Mono', monospace; 
+	font-size: auto; 
+	color:var(--color5);
+	margin: 5px 5px; 
+	top: 8%;
+  	left: 1%;
+	letter-spacing: 1px; 
+	line-height: 120%;
+/*	font-weight: bold;*/
+	max-width: 45%;
+	max-height: inherit;
+}
+
+.console_img {
+	max-width: 50%;
+}
+
+.aftertw {
+	visibility: hidden;
+}
+
+
 .titlehead {
 	font-family: 'Kumbh Sans', sans-serif;
 	color: var(--color5);
@@ -177,14 +202,6 @@ hr {
 	vertical-align: middle;
 }
 
-.console_img {
-/*	max-height: 0%;*/
-	max-width: 60%;
-	
-}
-.aftertw {
-	visibility: hidden;
-}
 
 @keyframes fadein {
     from {
