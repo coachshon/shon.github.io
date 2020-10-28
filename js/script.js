@@ -12,6 +12,29 @@ function unselected(icon){
 	icon.src = source;
 }
 
+function navscroll(button){
+	var section = "about_me";
+	switch(button.id){
+		case "btn_aboutme":
+			section = "about_me";
+			break;
+		case "btn_myskills":
+			section = "my_skills";
+			break;
+		case "btn_work":
+			section = "work_experience";
+			break;
+		case "btn_education":
+			section = "education";
+			break;		
+		case "btn_projects":
+			section = "projects";
+			break;	
+	}
+	showcontent();
+	document.getElementById(section).scrollIntoView();
+}
+
 
 var birthday = new Date(1997, 12, 16, 10, 0, 0, 0);
 var ageDifMs = Date.now() - birthday.getTime();
@@ -26,9 +49,9 @@ var aText = new Array(
 "> I love programming and challenges.",
 "> I am majoring in Computer Engineering at Federal University of Bahia (UFBA).",
 "> I currently work as a software developer at Ford Motor Company.",
-"> If you want to know more about me. You are in the right place :)"
+"> If you want to know more about me, you are in the right place :)"
 );
-var iSpeed = 100; // time delay of print out
+var iSpeed = 10; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
 var iScrollAt = 20; // start scrolling up at this many lines
@@ -39,26 +62,42 @@ var iRow; // initialise current row
  
 function typewriter()
 {
- sContents =  ' ';
- iRow = Math.max(0, iIndex-iScrollAt);
- var destination = document.getElementById("typedtext");
- 
- while ( iRow < iIndex ) {
-  sContents += aText[iRow++] + '<br />';
- }
- destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
- if ( iTextPos++ == iArrLength ) {
-  iTextPos = 0;
-  iIndex++;
-  if ( iIndex != aText.length ) {
-   iArrLength = aText[iIndex].length;
-   setTimeout("typewriter()", 500);
+	sContents =  ' ';
+	iRow = Math.max(0, iIndex-iScrollAt);
+	var destination = document.getElementById("typedtext");
+	while ( iRow < iIndex ) {
+    	sContents += aText[iRow++] + '<br />';
+   	}
+	destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+   	
+   	if ( iTextPos++ == iArrLength ) {
+    	iTextPos = 0;
+    	iIndex++;
+    	if ( iIndex != aText.length ) {
+			iArrLength = aText[iIndex].length;
+    		setTimeout("typewriter()", 500);
+    	}
+		else {
+			showcontent();
+			destination.innerHTML = destination.innerHTML.replace("_", "");
+		}
+   	} 
+	else {
+    	setTimeout("typewriter()", iSpeed);
+   	}
+
   }
- } else {
-  setTimeout("typewriter()", iSpeed);
- }
-}
 document.addEventListener("DOMContentLoaded", function(){
+	document.body.style.overflow = 'hidden';
 	typewriter();
 });
+
+function showcontent() {
+	var elements = document.getElementsByClassName('aftertw');
+  	for(i = 0; i < elements.length; i++) {
+		document.body.style.overflow = 'visible';
+    	elements[i].style.visibility = 'visible';
+		elements[i].style.animation = 'fadein 2s';
+  	}
+}
 

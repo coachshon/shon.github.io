@@ -6,6 +6,14 @@
 	--color5: #FEFFFF;
 }
 
+.scroll-element {
+  scroll-margin: 30px 0 0 30px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--color3);
 }
@@ -85,7 +93,7 @@ body {
 	width: 40px;
 }
 
-.sidenavcontent hr {
+hr {
 	height: 1px;
 	background-color: var(--color5);
 	border: none;
@@ -134,8 +142,8 @@ body {
 	font-family: 'Waiting for the Sunrise', cursive; 
 	font-size: 30px; 
 	color:var(--color1);
-	margin: 10px 20px; 
-	letter-spacing: 6px; 
+	margin: 30px 20px; 
+	letter-spacing: 1px; 
 	font-weight: bold;
 }
 
@@ -146,6 +154,7 @@ body {
 	margin: 0;
 	width: auto;
 	vertical-align: middle;
+	animation: fadein 3s;
 }
 
 .lastname {
@@ -154,5 +163,30 @@ body {
 	font-size: 400%;
 	width: auto;
 	margin: 0;
+	margin-left: 35pt;
+	vertical-align: middle;
+	animation: fadein 5s;
+}
+
+.titlehead {
+	font-family: 'Kumbh Sans', sans-serif;
+	color: var(--color5);
+	font-size: 300%;
+	margin: 30;
+	width: auto;
 	vertical-align: middle;
 }
+
+.aftertw {
+	visibility: hidden;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
