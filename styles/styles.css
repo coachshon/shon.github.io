@@ -172,16 +172,16 @@ hr {
 	position: absolute;
 	font-family: 'Ubuntu Mono', monospace; 
 	color:var(--color5);
-	font-size: 1.5vw;
+	font-size: 1.4vw;
 	margin: 10px 5px; 
 	top: 8%;
   	left: 1%;
-	max-width: 85%;
+	max-width: 90%;
 	line-height: 120%;
 }
 
 .console_img {
-	max-width: 90%;
+	max-width: 95%;
 }
 
 .aftertw {
