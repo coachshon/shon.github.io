@@ -176,12 +176,13 @@ hr {
 	margin: 10px 5px; 
 	top: 8%;
   	left: 1%;
+	max-width: 86%;
 	letter-spacing: 1px; 
 	line-height: 120%;
 }
 
 .console_img {
-	width: auto;
+	max-width: 90%;
 	align-self: center;
 }
 

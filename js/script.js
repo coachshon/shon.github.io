@@ -110,10 +110,6 @@ function typewriter() {
 document.addEventListener("DOMContentLoaded", function() {
 	document.body.style.overflow = 'hidden';
 	typewriter();
-	console = document.getElementById("console");
-	typedtext = document.getElementById("typedtext");
-	console.style.width = (0.7 * window.screen.width);
-	typedtext.style.width = console.style.width;
 });
 
 function showcontent() {
