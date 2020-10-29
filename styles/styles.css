@@ -172,12 +172,11 @@ hr {
 	position: absolute;
 	font-family: 'Ubuntu Mono', monospace; 
 	color:var(--color5);
-	font-size: 130%;
+	font-size: 1.5vw;
 	margin: 10px 5px; 
 	top: 8%;
   	left: 1%;
-	max-width: 86%;
-	letter-spacing: 1px; 
+	max-width: 85%;
 	line-height: 120%;
 }
 
