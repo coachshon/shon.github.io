@@ -108,7 +108,7 @@ function typewriter() {
 
   }
 
-/*document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
 	document.body.style.overflow = 'hidden';
 	typewriter();
 	var win = window,
@@ -117,8 +117,8 @@ function typewriter() {
     body = doc.getElementsByTagName('body')[0],
     x = win.innerWidth || docElem.clientWidth || body.clientWidth,
     y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
-	alert(x + ' × ' + y);
-});*/
+    //alert(x + ' × ' + y);
+});
 
 function showcontent() {
 	var elements = document.getElementsByClassName('aftertw');
