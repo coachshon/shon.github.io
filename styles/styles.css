@@ -141,6 +141,7 @@ hr {
 .firstname {
 	font-family: 'Kumbh Sans', sans-serif;
 	color: var(--color5);
+	text-shadow: 4px 4px 5px #17252A80;
 	font-size: 400%;
 	margin: 0;
 	width: auto;
@@ -151,6 +152,7 @@ hr {
 .lastname {
 	font-family: 'Kumbh Sans', sans-serif;
 	color: var(--color1);
+	text-shadow: 3px 3px 5px #17252A70;
 	font-size: 400%;
 	width: auto;
 	margin: 0;
@@ -168,7 +170,7 @@ hr {
 }
 
 .console_img {
-	max-width: 85%;
+	max-width: 75%;
 }
 
 .typedtextclass {
@@ -179,7 +181,7 @@ hr {
 	margin: 10px 5px; 
 	top: 4%;
   	left: 1%;
-	max-width: 80%;
+	max-width: 68%;
 	line-height: 140%;
 }
 
@@ -217,7 +219,8 @@ hr {
 
 .titlehead {
 	font-family: 'Kumbh Sans', sans-serif;
-	color: var(--color5);
+	color: var(--color5);		
+	text-shadow: 4px 4px 2px #17252A80;
 	font-size: 300%;
 	margin: 30;
 	width: auto;
@@ -249,20 +252,29 @@ hr {
 }
 
 .card_title {
+	display: inline;
 	font-family: 'Kumbh Sans', sans-serif;
 	font-weight: bold;
 	color: var(--color1);
 	font-size: 100%;
 	width: auto;
 	vertical-align: middle;
+	line-height: 3rem;
+}
+
+.card_logo {
+	width: 3rem;
+	vertical-align: middle;
+	float: right;
 }
 
 .card_list {
 	margin: 0;
+	margin-top: 1rem;
 	padding-left: 0.5rem;
 }
 
-.card_list li {
+.card_list li {	
 	position: relative;
 	list-style-type: none;
 	padding-left: 2rem;
