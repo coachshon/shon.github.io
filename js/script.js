@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function() {
+	document.body.style.overflow = 'hidden';
+	typewriter();
+	getProjects();
+});
+
 function navscroll(button) {
 	var section = "about_me";
 	switch(button.id){
