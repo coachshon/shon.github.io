@@ -1,6 +1,14 @@
-{
-	"repos": [
-		"FlappyBirdGame",
-		"PongGame"
-	]
-}
+[
+    {
+        "repo": "FlappyBirdGame",
+        "title": "Flappy Bird Game"
+    },
+    {
+        "repo": "PongGame",
+        "title": "Pong Game"
+    },
+    {
+        "repo": "sudoariel.github.io",
+        "title": "My Portfolio"
+    }
+]
