@@ -82,7 +82,7 @@ input[type=radio] {
 }
 
 .projects-cards .card_logo {
-  width: 3rem;
+  width: 10rem;
   vertical-align: middle;
   float: right;
 }
