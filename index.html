@@ -221,7 +221,7 @@
 					<div class="we_date_education">2014 - 2016</div>
 					<img class="icon" alt="SENAI Cimatec Logo" src="assets/timeline/senai_cimatec.jpeg" />
 					<div class="we_content">
-						<h2>A.S Electrotechnology</h2>
+						<h2>A.S. Electrotechnology</h2>
 						<h3>SENAI Cimatec</h3>
 					</div>
 				</div>
@@ -232,21 +232,24 @@
 			<h1 class="titlehead">
 				PROJECTS
 			</h1>
-			
-			<div id="projects_view" class="project-cards">
-				<div id="left_card" class="left_card card">
+			<input type="radio" name="slider" id="left_slider">
+			<input type="radio" name="slider" id="center_slider" checked>
+			<input type="radio" name="slider" id="right_slider">			
+			<div id="projects_view" class="projects-cards">
+				<label id="left_card" for="left_slider"  class="left_card card">
 					<img id="left_img" src="assets/cards/android3.png"
 						class="card_logo" />
-				</div>
-				<div id="center_card" class="center_card card">
+				</label>
+				<label id="center_card" for="center_slider" class="center_card card">
 					<img id="center_img" src="assets/cards/android2.png" class="card_logo" />
-				</div>
-				<div id="right_card" class="right_card card">
+				</label>
+				<label id="right_card" for="right_slider" class="right_card card">
 					<img id="right_img" src="assets/cards/python.png" class="card_logo" />
-				</div>
+				</label>
 			</div>
 		</section>
 	</div>
+	<script type="text/javascript" src="js/projects/projects-cards-updater.js"></script>
 </body>
 
 </html>
