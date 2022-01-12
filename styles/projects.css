@@ -1,5 +1,6 @@
 .project-cards {
   display: grid;
+  position: relative;
   grid-template-columns: minmax(200px, 300px) minmax(200px, 300px) minmax(
       200px,
       300px
@@ -12,22 +13,30 @@
 .project-cards .left_card {
   grid-row: 1;
   grid-column: 1;
+  transform: translatex(+40%) scale(0.8);
+  opacity: 0.4;
   z-index: 0;
 }
 
 .project-cards .center_card {
   grid-row: 1;
   grid-column: 2;
+  transform: translatex(0) scale(1);
+  opacity: 1;
   z-index: 1;
 }
 
 .project-cards .right_card {
   grid-row: 1;
   grid-column: 3;
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
   z-index: 0;
 }
 
 .project-cards .card {
+  width: 250px;
+  height: 250px;
   border: 2px solid var(--color4);
   background-color: var(--color4);
   border-radius: 5px;
