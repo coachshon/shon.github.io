@@ -17,7 +17,7 @@ input[type=radio] {
 #left_slider:checked ~ .projects-cards #right_card, 
 #center_slider:checked ~ .projects-cards #left_card, 
 #right_slider:checked ~ .projects-cards #center_card {
-  transform: translatex(+40%) scale(0.8);
+  transform: translatex(-20%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
   grid-column: 1;
@@ -26,7 +26,7 @@ input[type=radio] {
 #left_slider:checked ~ .projects-cards #center_card, 
 #center_slider:checked ~ .projects-cards #right_card, 
 #right_slider:checked ~ .projects-cards #left_card {
-  transform: translatex(-40%) scale(0.8);
+  transform: translatex(20%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
   grid-column: 3;
@@ -66,7 +66,7 @@ input[type=radio] {
   padding: 1rem;
   -o-object-fit: cover;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.6s ease;
   cursor: pointer;
 }
 
