@@ -1,108 +1,107 @@
 .sidenav {
-	height: 100%;
-	width: 300px;
-	padding: 20px;
-	background-color: var(--color1);
-	position: fixed;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	color: var(--color5);
-	text-align: center;
+  height: 100%;
+  width: 300px;
+  padding: 20px;
+  background-color: var(--color1);
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: var(--color5);
+  text-align: center;
 }
 
 .sidenavcontent {
-	margin: 0;
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	-ms-transform: translate(-50%, -50%);
-  	transform: translate(-50%, -50%);
-	width: 250px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 250px;
 }
 
 .profile-picture {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border: 7px solid var(--color2);
-	border-radius: 50%;
-	width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 7px solid var(--color2);
+  border-radius: 50%;
+  width: 150px;
 }
 
 .sidebarname {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20pt;
-	margin-top: 15px;
-	margin-bottom: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20pt;
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
 
 .sidebarcitation {
-	font-family: 'Kumbh Sans', sans-serif;
-	font-size: 12pt;
-	margin: 0pt;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12pt;
+  margin: 0pt;
 }
 
 .sidebarauthor {
-	font-family: 'Kumbh Sans', sans-serif;
-	font-size: 8pt;
-	text-align-last: right;
-	margin-top: 3pt;
-	margin-right: 10pt;
-	margin-left: 10pt;
-	margin-bottom: 0pt;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 8pt;
+  text-align-last: right;
+  margin-top: 3pt;
+  margin-right: 10pt;
+  margin-left: 10pt;
+  margin-bottom: 0pt;
 }
 
 .column {
-    float: left;
-    width: 25%;
-  }
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .mediaicon {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 40px;
-  }
-  
-  hr {
-      height: 1px;
-      background-color: var(--color5);
-      border: none;
-      margin-top: 15px;
-      margin-bottom: 15px;
-  }
-  
-  .nav_btns {
-      margin: 20px 0px;
-      width: inherit;
-  }
-  
-  .nav_btns button {
-      width: inherit;
-      height: 35px;
-      margin: 0px;
-      padding: 12px 0px;
-      border: none;
-      color:white;
-      background-color: transparent;
-      cursor: pointer;
-      display: inline-block;
-      vertical-align: middle;
-      font-family: 'Kumbh Sans', sans-serif;
-      font-size: 15px;
-      outline: none;
-  }
-  
-  .nav_btns button:hover {
-      background-color: var(--color2);	
-  }
+  float: left;
+  width: 25%;
+}
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.mediaicon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--color5);
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.nav_btns {
+  margin: 20px 0px;
+  width: inherit;
+}
+
+.nav_btns button {
+  width: inherit;
+  height: 35px;
+  margin: 0px;
+  padding: 12px 0px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+
+.nav_btns button:hover {
+  background-color: var(--color2);
+}

@@ -1,78 +1,83 @@
 :root {
-	--color1: #17252A;
-	--color2: #2B7A78;
-	--color3: #3AAFA9;
-	--color4: #DEF2F1;
-	--color5: #FEFFFF;
+  --color1: #17252a;
+  --color2: #2b7a78;
+  --color3: #3aafa9;
+  --color4: #def2f1;
+  --color5: #feffff;
 }
 
 .scroll-element {
-  	scroll-margin: 30px 0 0 30px;
+  scroll-margin: 30px 0 0 30px;
+  justify-content: center;
 }
 
 .aftertw {
-	visibility: hidden;
-	margin-top: 80px ;
+  visibility: hidden;
+  margin-top: 80px;
 }
 
 html {
-  	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	background-color: var(--color3);
+  display: flex;
+  background-color: var(--color3);
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
-	margin-left: 340px;
-	padding: 48px;
+  margin-left: 340px;
+  padding: 48px;
 }
 
 .title {
-	padding: 10px;
-	width: auto;
+  padding: 10px;
+  width: auto;
 }
 
 .firstname {
-	font-family: 'Kumbh Sans', sans-serif;
-	color: var(--color5);
-	text-shadow: 4px 4px 5px #17252A80;
-	font-size: 400%;
-	margin: 0;
-	width: auto;
-	vertical-align: middle;
-	animation: fadein 3s;
+  font-family: "Kumbh Sans", sans-serif;
+  color: var(--color5);
+  text-shadow: 4px 4px 5px #17252a80;
+  font-size: 400%;
+  margin: 0;
+  width: auto;
+  vertical-align: middle;
+  animation: fadein 3s;
 }
 
 .lastname {
-	font-family: 'Kumbh Sans', sans-serif;
-	color: var(--color1);
-	text-shadow: 3px 3px 5px #17252A70;
-	font-size: 400%;
-	width: auto;
-	margin: 0;
-	margin-left: 35pt;
-	vertical-align: middle;
-	animation: fadein 5s;
+  font-family: "Kumbh Sans", sans-serif;
+  color: var(--color1);
+  text-shadow: 3px 3px 5px #17252a70;
+  font-size: 400%;
+  width: auto;
+  margin: 0;
+  margin-left: 35pt;
+  vertical-align: middle;
+  animation: fadein 5s;
 }
 
 .titlehead {
-	font-family: 'Kumbh Sans', sans-serif;
-	color: var(--color5);		
-	text-shadow: 4px 4px 2px #17252A80;
-	font-size: 300%;
-	margin: 30;
-	width: auto;
-	vertical-align: middle;
+  font-family: "Kumbh Sans", sans-serif;
+  color: var(--color5);
+  text-shadow: 4px 4px 2px #17252a80;
+  font-size: 300%;
+  margin: 30;
+  width: auto;
+  vertical-align: middle;
 }
 
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 *,
