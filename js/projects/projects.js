@@ -11,18 +11,14 @@ class Project {
 var repos, filter; 
 var reposFiltered = [];
 
-function getProjects() {
+async function getProjects() {
     getGitHubReposJson(function(reposJson) {
         repos = reposJson;
         getFilterJson(function(filterJson) {
             filter = filterJson;
-            filterData();
+            return filterRepos(repos, filter);
         });
     });  
-}
-
-function filterData() {
-    console.log(filterRepos(repos, filter));
 }
 
 function getGitHubReposJson(callback) {

@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
 	document.body.style.overflow = 'hidden';
 	typewriter();
-	getProjects();
+	projectsData = getProjects();
+	initCarousel(projectsData);
 });
 
 function navscroll(button) {
