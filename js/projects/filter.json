@@ -1,14 +1,17 @@
 [
     {
         "repo": "FlappyBirdGame",
-        "title": "Flappy Bird Game"
+        "title": "Flappy Bird Game",
+        "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAYCAMAAAChk39BAAAAWlBMVEUAAAAiIDRFKDxmOTGPVjvfcSbZoGbuw5r78jaZ5VBqvjA3lG5LaS9SSyQyPDk/P3QwYIJbbuFjm/9fzeTL2/z///+brbeEfodpampZVlJ2QoqsMjLZV2PXe7pH1HzoAAAAAXRSTlMAQObYZgAAAHtJREFUKM+l09EKgCAMheH1CkFXm+//mu00qU0tNvrpRv1AISVybUO07pPZENPNEsRagGmGJMR8aCIOphmGfa8eEOZbu2GB4bge/mMGZVGNvS0OPy3NmGe06/ekMMn89eHeZe7ZGrPzxcKeRWYbj3Bx2ZNsfjBEqXcV105AwS1ZS6JxGgAAAABJRU5ErkJggg=="
     },
     {
         "repo": "PongGame",
-        "title": "Pong Game"
+        "title": "Pong Game",
+        "logo": ""
     },
     {
         "repo": "sudoariel.github.io",
-        "title": "My Portfolio"
+        "title": "My Portfolio",
+        "logo": ""
     }
 ]
