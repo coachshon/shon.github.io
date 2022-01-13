@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", async function() {
 	document.body.style.overflow = 'hidden';
 	typewriter();
-	projectsData = getProjects();
+	projectsData = await getProjects();
 	initCarousel(projectsData);
 });
 
