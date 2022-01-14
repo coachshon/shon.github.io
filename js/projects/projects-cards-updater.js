@@ -15,8 +15,10 @@ function initCarousel(data){
     card2.onclick = function() {checkClick(card2)};
     card3.onclick = function() {checkClick(card3)}; 
     console.log(data);
-    updateCard(cardsPosition[1]['card'], data[0]);
-    updateCard(cardsPosition[2]['card'], data[1]);
+    updateCard(cardsPosition[0]['card'], data[prevIndex(currentIndex, data.length)]);
+    updateCard(cardsPosition[1]['card'], data[currentIndex]);
+    updateCard(cardsPosition[2]['card'], data[nextIndex(currentIndex, data.length)]);
+    projectsData = data;
 }
     
 
@@ -29,27 +31,45 @@ function updateCard(card, data){
     }
 }
 
-function checkClick(card) {
+function checkClick(card) {    
     switch (card) {
-        case cardsPosition[0]['card']:
-            leftClick(card);
-            cardsPosition = rotateRight(cardsPosition);
+        case cardsPosition[0]['card']:            
+            cardsPosition = rotateRight(cardsPosition);    
+            leftClick();  
             break;
-        case cardsPosition[2]['card']:
-            rightClick(card);
+        case cardsPosition[2]['card']:            
             cardsPosition = rotateLeft(cardsPosition);
+            rightClick();
             break;
         default:
             break;
+    }    
+}
+
+function leftClick(){
+    currentIndex = prevIndex(currentIndex, projectsData.length);
+    updateCard(cardsPosition[0]['card'], projectsData[prevIndex(currentIndex, projectsData.length)]);
+}
+
+function rightClick(){
+    currentIndex = nextIndex(currentIndex, projectsData.length);
+    updateCard(cardsPosition[2]['card'], projectsData[nextIndex(currentIndex, projectsData.length)]);
+}
+
+function prevIndex(index, size) {
+    if(index == 0) {
+        return size - 1;
+    } else {
+        return index - 1;
     }
 }
 
-function leftClick(card){
-    console.log("left");
-}
-
-function rightClick(card){
-    console.log("right");
+function nextIndex(index, size) {
+    if(index == size - 1) {
+        return 0;
+    } else {
+        return index + 1;
+    }
 }
 
 function rotateLeft(arr){
