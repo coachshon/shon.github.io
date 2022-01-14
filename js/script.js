@@ -1,16 +1,9 @@
-function selected(icon) {
-	var pos = icon.src.lastIndexOf(".");
-	var source = icon.src.slice(0, pos);
-	source = source + "_selected.png";
-	icon.src = source;
-}
-
-function unselected(icon) {
-	var pos = icon.src.lastIndexOf("_");
-	var source = icon.src.slice(0, pos);
-	source = source + ".png";
-	icon.src = source;
-}
+document.addEventListener("DOMContentLoaded", async function() {
+	document.body.style.overflow = 'hidden';
+	typewriter();
+	projectsData = await getProjects();
+	initCarousel(projectsData);
+});
 
 function navscroll(button) {
 	var section = "about_me";
@@ -31,94 +24,10 @@ function navscroll(button) {
 			section = "projects";
 			break;	
 	}
-	finished_typing = true;
 	fill_typewriter();
-	while (!filled);
 	showcontent();
 	document.getElementById(section).scrollIntoView();
 }
-
-
-var birthday = new Date('December 16, 1997 00:00:00')
-var ageDifMs = Date.now() - birthday.getTime();
-var ageDate = new Date(ageDifMs); // miliseconds from epoch
-var age = Math.abs(ageDate.getUTCFullYear() - 1970).toString();
-var finished_typing = false;
-var filled = false;
-
-// set up text to print, each item in array is new line
-var aText = new Array(
-"> Hello!", 
-"> My name is Ariel, I am " + age + " years old.", 
-"> I love programming and challenges.",
-"> I am majoring in Computer Engineering at Federal University of Bahia (UFBA).",
-"> I currently work as a software developer at Ford Motor Company.",
-"> If you want to know more about me, you are in the right place :)"
-);
-var iSpeed = 10; // time delay of print out
-var iIndex = 0; // start printing array at this posision
-var iArrLength = aText[0].length; // the length of the text array
-var iScrollAt = 20; // start scrolling up at this many lines
- 
-var iTextPos = 0; // initialise text position
-var sContents = ''; // initialise contents variable
-var iRow; // initialise current row
- 
-function fill_typewriter() {
-	var destination = document.getElementById("typedtext");
-	var text = "";
-	for (var i = 0; i < aText.length; i++) {
-		text += aText[i] +  '<br />';
-	}
-	destination.innerHTML = text;
-	filled = true;
-}
-
-function typewriter() {
-	sContents =  ' ';
-	iRow = Math.max(0, iIndex-iScrollAt);
-	var destination = document.getElementById("typedtext");
-	while ( iRow < iIndex ) {
-    	sContents += aText[iRow++] + '<br />';
-   	}
-	if (finished_typing == false) {
-		destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-	}
-   	if ( iTextPos++ == iArrLength ) {
-    	iTextPos = 0;
-    	iIndex++;
-    	if ( iIndex != aText.length ) {
-			iArrLength = aText[iIndex].length;
-			if (finished_typing == false) {
-				setTimeout("typewriter()", 500);
-			} 	
-    	}
-		else {
-			finished_typing = true;
-			filled = true;
-			showcontent();
-			destination.innerHTML = destination.innerHTML.replace("_", "");
-		}
-   	} 
-	else {
-		if (finished_typing == false) {
-			setTimeout("typewriter()", iSpeed);
-		} 	
-   	}
-
-  }
-
-document.addEventListener("DOMContentLoaded", function() {
-	document.body.style.overflow = 'hidden';
-	typewriter();
-	var win = window,
-    doc = document,
-    docElem = doc.documentElement,
-    body = doc.getElementsByTagName('body')[0],
-    x = win.innerWidth || docElem.clientWidth || body.clientWidth,
-    y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
-    //alert(x + ' × ' + y);
-});
 
 function showcontent() {
 	var elements = document.getElementsByClassName('aftertw');
@@ -128,4 +37,3 @@ function showcontent() {
 		elements[i].style.animation = 'fadein 2s';
   	}
 }
-
