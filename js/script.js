@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", async function() {
+	document.body.style.overflow = 'hidden';
+	typewriter();
+	projectsData = await getProjects();
+	initCarousel(projectsData);
+});
+
 function navscroll(button) {
 	var section = "about_me";
 	switch(button.id){
