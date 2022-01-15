@@ -78,6 +78,10 @@ input[type=radio] {
   object-fit: cover;
   transition: transform 1s ease;
   cursor: pointer;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .projects-cards .card_title {
@@ -113,6 +117,10 @@ input[type=radio] {
   vertical-align: middle;
   float: right;
   margin: 25px;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .projectsbutton {
