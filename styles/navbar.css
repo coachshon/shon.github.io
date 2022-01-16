@@ -30,6 +30,7 @@
   border: 7px solid var(--color2);
   border-radius: 50%;
   width: 150px;
+  height: 150px;
 }
 
 .sidebarname {
@@ -90,18 +91,50 @@ hr {
   width: inherit;
   height: 35px;
   margin: 0px;
-  padding: 12px 0px;
+  padding: 0px;
   border: none;
-  color: white;
-  background-color: transparent;
+  color: var(--color4);
+  background-color: var(--color1);
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 15px;
   outline: none;
+  transition: background-color 0.25s ease;
 }
 
 .nav_btns button:hover {
   background-color: var(--color2);
+}
+
+.nav_bottom_btns {
+  padding: 10px;
+}
+
+.nav_bottom_btns button {
+  display: inline;
+  text-align: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  height: 30px;
+  width: 80%;
+  min-width: 100px;
+  border-radius: 5px;
+  background: var(--color2);
+  border: none;
+  color:  var(--color4);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.nav_bottom_btns button:hover {
+  color: var(--color2);
+  background: var(--color4);
+}
+
+.column_button {
+  float: left;
+  width: 50%;
 }
