@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="js/console.js"></script>
 	<script type="text/javascript" src="js/projects/projects.js"></script>
 	<script type="text/javascript" src="js/projects/projects-cards-updater.js"></script>
+	<script type="text/javascript" src="js/projects/languages-field.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/cards.css">
 	<link rel="stylesheet" type="text/css" href="styles/timeline.css">
@@ -245,25 +246,26 @@
 			<input type="radio" name="slider" id="center_slider" checked>
 			<input type="radio" name="slider" id="right_slider">			
 			<div id="projects_view" class="projects-cards">
-				<label id="left_card" for="left_slider"  class="left_card card">
+				<label id="left_card" for="left_slider"  class="left_card card clearfix">
 					<h1  class="card_title"></h1> 
 					<img id="left_img" class="card_logo" />
 					<p class="card_description"></p>
 					<button id="left_card_button" class="projectsbutton"></button>
 				</label>
-				<label id="center_card" for="center_slider" class="center_card card">
+				<label id="center_card" for="center_slider" class="center_card card clearfix">
 					<h1  class="card_title"></h1> 
 					<img id="center_img" class="card_logo" />
 					<p class="card_description"></p>
 					<button id="center_card_button" class="projectsbutton"></button>
 				</label>
-				<label id="right_card" for="right_slider" class="right_card card">
+				<label id="right_card" for="right_slider" class="right_card card clearfix">
 					<h1  class="card_title"></h1> 
 					<img id="right_img" class="card_logo" />
 					<p class="card_description"></p>
 					<button id="right_card_button" class="projectsbutton"></button>
 				</label>
 			</div>
+			<div id="projects_languages" class="projects-languages clearfix"></div>
 		</section>
 	</div>	
 </body>

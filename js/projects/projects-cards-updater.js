@@ -10,7 +10,7 @@ function initCarousel(data){
     centerSlider = document.getElementById('center_slider');
     rightSlider = document.getElementById('right_slider');
     cardsPosition = [{'card':card1, 'slider':leftSlider}, {'card':card2, 'slider':centerSlider}, {'card':card3, 'slider':rightSlider}];
-
+    clearLanguagesField();
     card1.onclick = function() {checkClick(card1)};
     card2.onclick = function() {checkClick(card2)};
     card3.onclick = function() {checkClick(card3)}; 
@@ -18,6 +18,7 @@ function initCarousel(data){
     updateCard(cardsPosition[0]['card'], data[prevIndex(currentIndex, data.length)]);
     updateCard(cardsPosition[1]['card'], data[currentIndex]);
     updateCard(cardsPosition[2]['card'], data[nextIndex(currentIndex, data.length)]);
+    data[currentIndex]['languages'].forEach(appendLanguageImage);
     projectsData = data;
 }
     
@@ -47,12 +48,16 @@ function checkClick(card) {
 }
 
 function leftClick(){
+    clearLanguagesField();
     currentIndex = prevIndex(currentIndex, projectsData.length);
+    projectsData[currentIndex]['languages'].forEach(appendLanguageImage);
     updateCard(cardsPosition[0]['card'], projectsData[prevIndex(currentIndex, projectsData.length)]);
 }
 
 function rightClick(){
+    clearLanguagesField();
     currentIndex = nextIndex(currentIndex, projectsData.length);
+    projectsData[currentIndex]['languages'].forEach(appendLanguageImage);
     updateCard(cardsPosition[2]['card'], projectsData[nextIndex(currentIndex, projectsData.length)]);
 }
 
