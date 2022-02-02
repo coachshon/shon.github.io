@@ -61,7 +61,7 @@
   transform: rotate(45deg);
 }
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-width: 800px) {
   .skill-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
