@@ -21,6 +21,10 @@
   margin-top: 80px;
 }
 
+.last-section {
+  min-height: 400px;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
