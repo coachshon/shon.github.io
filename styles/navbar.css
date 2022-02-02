@@ -138,3 +138,18 @@ hr {
   float: left;
   width: 50%;
 }
+
+@media only screen and (max-device-width: 800px) {
+  .nav_btns button {
+   font-size: 15pt;  
+   height: 45px;
+  }
+
+  .sidebarcitation {
+    font-size: 14pt;
+  }
+
+  .sidebarauthor {
+    font-size: 12pt;
+  }
+}
