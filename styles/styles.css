@@ -10,13 +10,24 @@
   scroll-margin: 30px 0 0 30px;
 }
 
+@media only screen and (max-width: 800px) {
+  .scroll-element {
+    scroll-margin: 10px 0 0 10px;
+  }
+}
+
 .aftertw {
   visibility: hidden;
   margin-top: 80px;
 }
 
+.last-section {
+  height: 400px;
+}
+
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -25,6 +36,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: scroll; 
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -32,7 +44,7 @@ body::-webkit-scrollbar {
 }
 
 .content {
-  margin-left: 340px;
+  margin-left: 320px;
   padding: 48px;
 }
 
