@@ -23,6 +23,19 @@
   line-height: 120%;
 }
 
+@media only screen and (min-width: 300px) {
+  .console_img {
+    max-width: 100%;
+  }
+  .typedtextclass {
+    font-size: 2.4vw;
+    left: 1%;
+    max-width: 97%;
+    line-height: 120%;
+  }
+}
+
+
 @media only screen and (min-width: 1000px) {
   .console_img {
     max-width: 70%;
