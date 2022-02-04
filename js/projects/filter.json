@@ -78,5 +78,22 @@
         "repo": "TuringMachine-TimezoneTravelCalculator",
         "title": "Timezone Travel Calculator",
         "logo": "assets/projects/turing_machine.png"
+    },
+    {
+        "repo": "AOSP-Tools",
+        "title": "AOSP Tools",
+        "logo": "assets/projects/aosp-tools.png"
+    },
+    {
+        "repo": "Android-Emulator-MicVolumeStabilizer",
+        "title": "Android Emulator Microphone Stabilizer",
+        "logo": "assets/projects/mic-stabilizer.png"
+    },
+    {
+        "repo": "AOSP-CarSettings",
+        "title": "AOSP CarSettings Customization",
+        "logo": "assets/projects/car-settings.png"
     }
+
+
 ]
