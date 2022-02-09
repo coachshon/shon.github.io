@@ -93,6 +93,11 @@
         "repo": "AOSP-CarSettings",
         "title": "AOSP CarSettings Customization",
         "logo": "assets/projects/car-settings.png"
+    },
+    {
+        "repo": "AOSP-AndroidHAL",
+        "title": "AOSP Android HAL",
+        "logo": "assets/projects/hal.png"
     }
 
 
