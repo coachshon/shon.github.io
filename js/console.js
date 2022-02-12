@@ -11,7 +11,7 @@ var aText = new Array(
 "> My name is Ariel, I am " + age + " years old.", 
 "> I love programming and challenges.",
 "> I am majoring in Computer Engineering at Federal University of Bahia (UFBA).",
-"> I currently work as a software developer at Ford Motor Company.",
+"> I currently work as an Android Software Developer.",
 "> If you want to know more about me, you are in the right place :)"
 );
 var iSpeed = 10; // time delay of print out
