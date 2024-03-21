@@ -9,8 +9,8 @@ var filled = false;
 var aText = new Array(
 "> Hello!", 
 "> My name is Shon, I am yearsss old.", 
-"> I currently work as FullStack Developer at Button.",
-"> If you want to know more about me, you are in the right place :)"
+"> I currently work as a FullStack Developer at Button.",
+"> If you want to know more about me, you are in the right place 🙂"
 );
 var iSpeed = 10; // time delay of print out
 var iIndex = 0; // start printing array at this posision
