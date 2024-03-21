@@ -9,7 +9,6 @@ var filled = false;
 var aText = new Array(
 "> Hello!", 
 "> My name is Shon, I am yearsss old.", 
-"> I love programming and challenges.",
 "> I currently work as FullStack Developer at Button.",
 "> If you want to know more about me, you are in the right place :)"
 );
