@@ -10,7 +10,7 @@ var aText = new Array(
 "> Hello, I am Shon 👋", 
 "> I support Chelsea FC ⚽",
 "> I work as a FullStack Developer at Button 💻",
-"> If you want to know more about me, you are at the right place 🙂"
+"> Stick around if you want to know more about me 🙂"
 );
 var iSpeed = 10; // time delay of print out
 var iIndex = 0; // start printing array at this posision
